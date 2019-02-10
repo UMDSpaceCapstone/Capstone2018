@@ -23,28 +23,34 @@ W = mtot*g;
 %energy
 Ke = 1/2*mtot*v^2;
 
-% choose values for the inner and outer thickness (subject to change)
-ro =
-ri = 
+% choose values for the inner and outer radius (m) (subject to change)
+%ro = .3
+%ri = 0
+
+%diameter and thickness for a circular ring
+d = .1:.01:1
+t = .02
 
 % use area of an annulus (ring)
-A = pi*(ro^2 - ri^2);
+%A = pi*(ro^2 - ri^2);
+A = pi.*d.*t; % circular ring
 
-%moment of intertia of a ring
-I = 1/2*m*(ro^2 + ri^2);
+%moment of intertia of a ring (kg-m^2)
+%density = 2700; % kg/m^3
+%volume = pi*L*(ro^2-ri^2);
+%m = 500/4 %(kg)
+%I = 1/2*m*(ro^2 + ri^2);
+I = (pi.*d.^3.*t)./8;
 
-%E for 6061 aluminum (GPa)
-E = 68.9;
+%E for 6061 aluminum (Pa)
+E = 68.9e9;
 
-% yield strength (sigma) (MPa)
+% yield strength (sigma) (Pa)
 %O = Pcr/A
-O = 276;
-Pcr = O/A
+O = 276e6;
+Pcr = O*A
 
 %buckling (using aluminum)
 %Pcr = (pi^2*E*I)/(KL)^2
-L 
-
-
-%find Ri and Ro and area
-%solve for Pcr using O from aluminum then adjust from there
+K = .5; % (fixed-fixed)
+L = sqrt(((pi^2)*E*I)/(Pcr*K^2))
