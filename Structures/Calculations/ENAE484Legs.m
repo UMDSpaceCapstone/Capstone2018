@@ -25,41 +25,57 @@ W = mtot*g;
 %energy
 Ke = 1/2*mtot*v^2;
 
-% choose values for the inner and outer radius (m) (subject to change)
-%ro = .3
-%ri = 0
-
-%diameter and thickness for a circular ring
-do = .1:.01:2;
-di = do-.2;
-
-% use area of an annulus (ring)
-%A = pi*(ro^2 - ri^2);
-A = pi/4.*(do.^2-di.^2); % circular ring
-
-%moment of intertia of a ring (kg-m^2)
-%density = 2700; % kg/m^3
-%volume = pi*L*(ro^2-ri^2);
-%m = 500/4 %(kg)
-%I = 1/2*m*(ro^2 + ri^2);
-I = pi/64.*(do.^4-di.^4);
-
-%E for 6061 aluminum (Pa)
-E = 68.9e9;
-
 % yield strength (sigma) (Pa)
 %O = Pcr/A
-O = 276e6;
-Pcr = mtot*v/t;
+% O = 276e6;
+% P = O.*A;
 
-%buckling (using aluminum)
-%Pcr = (pi^2*E*I)/(KL)^2
-K = .5; % (fixed-fixed)
-L = sqrt(((pi^2)*E.*I)./(Pcr.*K^2));
+% vertical acceleration loading
+%diameter and thickness for a circular ring
+ do = .05:.01:.5;
+ dt = .001:.001:.041;
+for i = 1:length(do)
+    for j = 1:length(dt)
+        di(i,j) = do(i)-dt(j);
+        % length of the legs
+        L = 1.8;
 
-for i = 1:length(L)
-    if L(i) < 10
-        Ln(1,i) = L(i);
-        Ln(2,i) = i;
+        % use area of an annulus (ring)
+        A(i,j) = pi/4.*(do(i).^2-di(i,j).^2); % circular ring
+
+        %moment of intertia of a ring (m^4)
+        I(i,j) = pi/64.*(do(i).^4-di(i,j).^4);
+
+        %E for 6061 aluminum (Pa)
+        E = 68.9e9;
+
+        % ultimate safety factor
+        SFu = 2;
+
+        %buckling (using aluminum)
+        %Pcr = (pi^2*E*I)/(KL)^2
+        Pcr = (mtot*(v/t)*SFu); %max buckling kN
+        K = .5; % (fixed-fixed)
+        Pcrb(i,j) = ((pi^2*E.*I(i,j))./(K*L)^2); %actual buckling kN
+        
+        
+    end
+    
+  
+end
+
+count = 1;
+for i = 1:length(do)
+    for j = 1:length(dt)
+        if Pcrb(i,j) < Pcr
+            Pact(1,count) = Pcrb(i,j);
+            Pact(2,count) = i;
+            Pact(3,count) = j;
+            count = count+1;
+        end
     end
 end
+
+
+% horizontal acceleration loading
+
