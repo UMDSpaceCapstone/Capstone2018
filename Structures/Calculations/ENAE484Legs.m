@@ -6,7 +6,7 @@ clear all
 % masses (kg)
 mpr_des = .10*27312;
 mi_des = 2242.4; %includes structural mass
-mtot_asc = 13015;
+mtot_asc = 13264;
 mtot = mpr_des + mtot_asc + mi_des-490;
 
 %moon gravity (m/s^2)
