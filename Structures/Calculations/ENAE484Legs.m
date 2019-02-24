@@ -1,12 +1,12 @@
-% Juliette Abbonizio Lander Legs Calculations
+% Juliette Abbonizio and Mo Khaial Lander Legs Calculations
 % using the mass and the delta vs calculate the forces
 % assuming the legs will be made out of 6061 aluminum
 
 clear all
 % masses (kg)
-mpr_des = .10*22745;
+mpr_des = .10*27312;
 mi_des = 2242.4; %includes structural mass
-mtot_asc = 13015;
+mtot_asc = 13264;
 mtot = mpr_des + mtot_asc + mi_des-490;
 
 %moon gravity (m/s^2)
@@ -87,7 +87,8 @@ end
 
 %upper leg
 %force; outer diameter(m) ; thickness(m) ; length(m) ; weight (kg)
-[1760093.9446; 0.1; 0.013; 1.8;37.25]
+[1760093.9446; 0.1; 0.013; 1.8; 37.25]; %first try
+[2433045.305; 0.1; 0.02; 1.8; 55.17] %second try
 
 %lower leg
 
