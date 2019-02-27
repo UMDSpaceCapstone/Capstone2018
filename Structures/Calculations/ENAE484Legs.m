@@ -87,10 +87,10 @@ end
 
 %upper leg
 %force; outer diameter(m) ; thickness(m) ; length(m) ; weight (kg)
-[1760093.9446; 0.1; 0.013; 1.8; 37.25]; %first try
-[2433045.305; 0.1; 0.02; 1.8; 55.17] %second try
+[11542937.24; 0.14; 0.039; .9; 144.04]
 
 %lower leg
+[1760093.9446; 0.1; 0.013; .9; 37.25];
 
 % horizontal acceleration loading
 
