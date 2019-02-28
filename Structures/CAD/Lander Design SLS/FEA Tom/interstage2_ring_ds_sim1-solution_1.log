@@ -1,0 +1,112 @@
+NX Nastran V12.2 (Intel64 Family 6 Model 79 Stepping 1 Windows Server 2012 R2  ) Control File:
+-------------------------------------------------------------------
+Nastran BUFFSIZE=32769 $(c:/program files/siemens/nx 12.0/nxnastran/conf/nast12.rcf[1])
+Nastran BUFFPOOL=20.0X $(c:/program files/siemens/nx 12.0/nxnastran/conf/nast12.rcf[4])
+Nastran DIAGA=128 DIAGB=0 $(c:/program files/siemens/nx 12.0/nxnastran/conf/nast12.rcf[8])
+Nastran SYSTEM(442)=2 $(command line[5])
+Nastran REAL=4319084544 $(Memory limit for MPI and other specialized modules)
+JID='\\Client\C$\Users\TBain\Documents\GitHub\Capstone2018\Structures\CAD\Lander Design 3\Alternate Ascent Stage\FEA Tom\interstage2_ring_ds_sim1-solution_1.dat'
+OUT='./interstage2_ring_ds_sim1-solution_1'
+MEM=1944295424
+MACH='Intel64 Family 6 Model 79 Stepping 1'
+OPER='Windows Server 2012 R2'
+OSV=' '
+MODEL='Intel(R) Xeon(R) CPU E5-2667 v4 @ 3.20GHz (ENGRVDA9203V)'
+CONFIG=8666
+NPROC=8
+symbol=DELDIR='c:/program files/siemens/nx 12.0/nxnastran/nxn12p02/nast/del' $(program default)
+symbol=DEMODIR='c:/program files/siemens/nx 12.0/nxnastran/nxn12p02/nast/demo' $(program default)
+symbol=SSSALTERDIR='c:/program files/siemens/nx 12.0/nxnastran/nxn12p02/nast/misc/sssalter' $(program default)
+symbol=TPLDIR='c:/program files/siemens/nx 12.0/nxnastran/nxn12p02/nast/tpl' $(program default)
+SDIR='c:/users/tbain235/appdata/local/temp/112/interstage2_ring_ds_sim1-solution_1.T1076_8'
+DBS='c:/users/tbain235/appdata/local/temp/112/interstage2_ring_ds_sim1-solution_1.T1076_8'
+SCR=yes
+SMEM=20.0X
+NEWDEL='c:/program files/siemens/nx 12.0/nxnastran/nxn12p02/em64tntl/SSS'
+DEL='NXNDEF'
+AUTH='28000@plm.eng.umd.edu'
+AUTHQUE=0
+MSGCAT='c:/program files/siemens/nx 12.0/nxnastran/nxn12p02/em64tntl/analysis.msg'
+MSGDEST='f06'
+PROG=bundle
+NEWS='c:/program files/siemens/nx 12.0/nxnastran/nxn12p02/nast/news.txt'
+UMATLIB='libnxumat.dll'
+-------------------------------------------------------------------
+NXN_ISHELLPATH=C:\Program Files\Siemens\NX 12.0\nxnastran\bin
+NXN_JIDPATH=
+PATH=c:/program files/siemens/nx 12.0/nxnastran/nxn12p02/em64tntl;c:/program files/siemens/nx 12.0/nxnastran/nxn12p02/em64tntl/sysnoise;c:/program files/siemens/nx 12.0/nxnastran/nxn12p02/em64tntl/sml;c:/program files/siemens/nx 12.0/nxnastran/nxn12p02/em64tntl/impi/bin;c:/program files/siemens/nx 12.0/nxnastran/nxn12p02/em64tntl/monitor;C:\Program Files\Siemens\NX 12.0\nxbin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Citrix\system32;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Citrix\Virtual Desktop Agent\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Citrix\System32\Citrix\IMA;C:\Windows\system32\Citrix\IMA
+Command Line: interstage2_ring_ds_sim1-solution_1.dat prog=bundle old=no scratch=yes sys442=2
+Current Dir: \\Client\C$\Users\TBain\Documents\GitHub\Capstone2018\Structures\CAD\Lander Design 3\Alternate Ascent Stage\FEA Tom
+Executable:  c:/program files/siemens/nx 12.0/nxnastran/nxn12p02/em64tntl/analysis.exe
+NXN_MSG:     stderr
+FPE:         no
+-------------------------------------------------------------------
+Current resource limits:
+ Physical memory:                    32964 MB
+ Physical memory available:          27287 MB
+ Paging file size:                   40668 MB
+ Paging file size available:         33918 MB
+ Virtual memory:                 134217727 MB
+ Virtual memory available:       134217644 MB
+-------------------------------------------------------------------
+System configuration:
+ Hostname:         ENGRVDA9203V.AD.UMD.EDU
+ Architecture:     em64tnt
+ Platform:         Intel64 Family 6 Model 79 Stepping 1 Windows Server 2012 R2  
+ Model:            Intel(R) Xeon(R) CPU E5-2667 v4 @ 3.20GHz
+ Clock freq.:      3200 MHz
+ Number of CPUs:   8
+ Executable:       standard
+ Raw model ID:     8666
+ Config number:    8666
+ Physical memory:  32964 MB
+ Virtual memory:   40668 MB
+ Numeric format:   64-bit little-endian IEEE.
+ Bytes per word:   8
+ Disk block size:  512 bytes (64 words)
+ Remote shell cmd: Remote capabilities not available.
+-------------------------------------------------------------------
+NX Nastran started  Mon Feb 25 22:46:09 EST 2019
+ 22:46:09  Beginning Analysis
+
+ 22:46:09  NX NASTRAN Authorization Information - System Attributes
+ 22:46:09  --------------------------------------------------------
+ 22:46:09  Model: Intel(R) Xeon(R) CPU E5-2667 v4
+ 22:46:09  Machine: Intel64 Family 6 Model 79 Steppi
+ 22:46:09  OS: Windows Server 2012 R2
+ 22:46:09  Version:
+ 22:46:09  License File(s): 28000@plm.eng.umd.edu
+
+
+ 22:46:09  NX NASTRAN Licensing Information
+ 22:46:09  -------------------------------
+ 22:46:09  Sold To ID:            1333569 - UNIVERSITY OF MARYLAN
+ 22:46:09  Webkey Access Code:    6KP6PD4LU4
+ 22:46:09  License File Issuer:   SIEMENS
+
+
+ 22:46:09  NX NASTRAN Authorization Information - Checkout Successful
+ 22:46:09  ----------------------------------------------------------
+ 22:46:09  License for module NX Nastran Basic - NX Desktop (Bundle)  checked out successfully
+
+ 22:46:10  Loading Shared Library C:\Program Files\Siemens\NX 12.0\nxcae_extras\tmg\exe\mayamoncomm.dll
+
+Starting viewer with UGII_MONITOR_DIR set to 'C:\Program Files\Siemens\NX 12.0\nxcae_extras\tmg\exe'
+Starting monitor viewer at C:\Program Files\Siemens\NX 12.0\nxcae_extras\tmg\exe/xcsmon_viewer.exe
+ 22:46:16  Analysis started.
+ 22:46:16  Geometry access/verification to CAD part initiated (if needed).
+ 22:46:16  Geometry access/verification to CAD part successfully completed (if needed).
+ 22:46:24  Finite element model generation started.
+ 22:46:24  Finite element model generated 3630 degrees of freedom.
+ 22:46:24  Finite element model generation successfully completed.
+ 22:46:24  Application of Loads and Boundary Conditions to the finite element model started.
+ 22:46:25  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 22:46:26  Solution of the system equations for linear statics started.
+ 22:46:26  Solution of the system equations for linear statics successfully completed.
+ 22:46:30  Linear static analysis completed.
+ 22:46:35  NSEXIT: EXIT(0)
+ 22:46:35  Analysis complete  0
+Real:       26.129 seconds ( 0:00:26.129)
+User:        3.359 seconds ( 0:00:03.359)
+Sys:         0.343 seconds ( 0:00:00.343)
+NX Nastran finished Mon Feb 25 22:46:35 EST 2019
