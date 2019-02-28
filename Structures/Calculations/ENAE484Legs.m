@@ -32,15 +32,15 @@ Ke = 1/2*mtot*v^2;
 
 % vertical acceleration loading
 %diameter and thickness for a circular ring
- do = .05:.01:.15;
- dt = .01:.001:.041;
+ do = .1:.01:.25;
+ dt = .03:.001:.060;
  count = 1;
  count1 = 1;
 for i = 1:length(do)
     for j = 1:length(dt)
         di(i,j) = do(i)-dt(j);
         % length of the legs
-        L = 1.5:.1:1.8;
+        L = 2.5:.1:3;
 
         % use area of an annulus (ring)
         A(i,j) = pi/4.*(do(i).^2-di(i,j).^2); % circular ring
@@ -87,10 +87,10 @@ end
 
 %upper leg
 %force; outer diameter(m) ; thickness(m) ; length(m) ; weight (kg)
-[11542937.24; 0.14; 0.039; .9; 144.04]
+[16024190.7; 0.2; 0.049; 3; 439.3];
 
 %lower leg
-[1760093.9446; 0.1; 0.013; .9; 37.25];
+[5338457.5; 0.15; 0.04; 3; 265.6];
 
 % horizontal acceleration loading
 
