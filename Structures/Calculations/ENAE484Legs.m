@@ -111,4 +111,4 @@ E_alf = 68.9e9;
 Kf = .5; % (fixed-fixed)
 
 Pcrb_alf = ((pi^2*E_alf*Iof)/(Kf*Lof)^2)
-
+Pcrb_tot = 124467000;
