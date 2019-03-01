@@ -1,0 +1,67 @@
+
+*** 11:43:20 *** 
+Starting Nastran Exporter
+
+*** 11:43:20 *** 
+Writing file 
+C:\Users\jabbo\OneDrive\Documents\GitHub\Capstone2018\Structures\CAD\leg_assembly_sim1-solution_2.dat
+ 
+*** 11:43:20 *** 
+Writing NX NASTRAN 12.0 compatible deck
+
+*** 11:43:20 *** 
+Writing Nastran System section
+
+*** 11:43:20 *** 
+Writing File Management section
+
+*** 11:43:20 *** 
+Writing Executive Control section
+
+*** 11:43:20 *** 
+Writing Case Control section
+
+*** 11:43:21 *** 
+Writing Bulk Data section
+
+*** 11:43:21 *** 
+Writing Nodes
+
+*** 11:43:22 *** 
+Writing Elements
+
+*** 11:43:22 *** 
+Writing Physical Properties
+
+*** 11:43:22 *** 
+Writing Materials
+
+*** 11:43:22 *** 
+Writing Degree-of-Freedom Sets
+
+*** 11:43:22 *** 
+Writing Loads and Constraints
+
+*** 11:43:22 *** 
+Writing Coordinate Systems
+
+*** 11:43:22 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CTETRA   | 31895    |
+| FORCE    | 128      |
+| GRID     | 48255    |
+| MAT1     | 1        |
+| MATT1    | 1        |
+| PARAM    | 6        |
+| PSOLID   | 1        |
+| SPC      | 3247     |
+| TABLEM1  | 3        |
++----------+----------+
+
+*** 11:43:23 *** 
+Nastran Deck Successfully Written
+

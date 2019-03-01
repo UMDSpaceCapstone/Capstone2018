@@ -1,0 +1,68 @@
+
+*** 12:11:12 *** 
+Starting Nastran Exporter
+
+*** 12:11:12 *** 
+Writing file 
+C:\Users\jabbo\OneDrive\Documents\GitHub\Capstone2018\Structures\CAD\leg_assembly_sim1-fixed_leg_buckling.dat
+ 
+*** 12:11:12 *** 
+Writing NX NASTRAN 12.0 compatible deck
+
+*** 12:11:12 *** 
+Writing Nastran System section
+
+*** 12:11:12 *** 
+Writing File Management section
+
+*** 12:11:12 *** 
+Writing Executive Control section
+
+*** 12:11:12 *** 
+Writing Case Control section
+
+*** 12:11:12 *** 
+Writing Bulk Data section
+
+*** 12:11:12 *** 
+Writing Nodes
+
+*** 12:11:13 *** 
+Writing Elements
+
+*** 12:11:13 *** 
+Writing Physical Properties
+
+*** 12:11:13 *** 
+Writing Materials
+
+*** 12:11:13 *** 
+Writing Degree-of-Freedom Sets
+
+*** 12:11:13 *** 
+Writing Loads and Constraints
+
+*** 12:11:13 *** 
+Writing Coordinate Systems
+
+*** 12:11:13 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CTETRA   | 31702    |
+| EIGRL    | 1        |
+| GRID     | 48012    |
+| MAT1     | 1        |
+| MATT1    | 1        |
+| PARAM    | 6        |
+| PSOLID   | 1        |
+| SPC      | 420      |
+| SPCADD   | 1        |
+| TABLEM1  | 3        |
++----------+----------+
+
+*** 12:11:13 *** 
+Nastran Deck Successfully Written
+
