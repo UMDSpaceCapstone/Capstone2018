@@ -87,10 +87,28 @@ end
 
 %upper leg
 %force; outer diameter(m) ; thickness(m) ; length(m) ; weight (kg)
-[16024190.7; 0.2; 0.049; 3; 439.3];
+[16226483.55; 0.2; 0.05; 1.5; 439.3];
 
 %lower leg
-[5338457.5; 0.15; 0.04; 3; 265.6];
+[5338457.5; 0.15; 0.04; 1.5; 265.6];
 
-% horizontal acceleration loading
+% force the legs can withstand
+%length
+Lof = 1.5;
+
+%outer diameter and thickness
+dof = [.2 .15];
+dif = [.05 .04];
+
+% use area of an annulus (ring)
+Aof = pi/4*(dof.^2-dif.^2); % circular ring
+
+%moment of intertia of a ring (m^4)
+Iof = pi/64*(dof.^4-dif.^4);
+
+%E for 6061 aluminum (Pa)
+E_alf = 68.9e9;
+Kf = .5; % (fixed-fixed)
+
+Pcrb_alf = ((pi^2*E_alf*Iof)/(Kf*Lof)^2)
 
