@@ -59,10 +59,10 @@ for i = 1:length(do)
 
         %buckling (using aluminum)
         %Pcr = (pi^2*E*I)/(KL)^2
-        Pcr = (mtot*(v/t)*SFu); %max buckling N
+        Pcr = (mtot*(v/t)*SFu); %max buckling kN
         K = .5; % (fixed-fixed)
         for k = 1:length(L)
-            Pcrb_al(i,j) = ((pi^2*E_al.*I(i,j))./(K*L(k))^2); %actual buckling N (Aluminum)
+            Pcrb_al(i,j) = ((pi^2*E_al.*I(i,j))./(K*L(k))^2); %actual buckling kN (Aluminum)
             
             % Volume of Hollow Cylinder V = pi/4*h*(do^2-di^2)
             V = pi/4*L(k)*(do(i)^2-(do(i)-dt(j))^2);
@@ -92,7 +92,7 @@ end
 %lower leg
 [5338457.5; 0.15; 0.04; 1.5; 265.6];
 
-% finding the force the legs can withstand
+% force the legs can withstand
 %length
 Lof = 1.5;
 
@@ -111,4 +111,4 @@ E_alf = 68.9e9;
 Kf = .5; % (fixed-fixed)
 
 Pcrb_alf = ((pi^2*E_alf*Iof)/(Kf*Lof)^2)
-Pcrb_tot = 124467000;
+
