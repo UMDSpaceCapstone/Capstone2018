@@ -1,0 +1,67 @@
+
+*** 11:20:53 *** 
+Starting Nastran Exporter
+
+*** 11:20:53 *** 
+Writing file 
+C:\Users\TBain\Desktop\Github\Capstone2018\Structures\CAD\LanderDesign 4 Single 
+Stage\FEM on assembly\v2\core_part_united_55.2_top_sim1-solution_1.dat
+ 
+*** 11:20:53 *** 
+Writing NX NASTRAN 12.0 compatible deck
+
+*** 11:20:53 *** 
+Writing Nastran System section
+
+*** 11:20:53 *** 
+Writing File Management section
+
+*** 11:20:53 *** 
+Writing Executive Control section
+
+*** 11:20:53 *** 
+Writing Case Control section
+
+*** 11:20:54 *** 
+Writing Bulk Data section
+
+*** 11:20:54 *** 
+Writing Nodes
+
+*** 11:20:54 *** 
+Writing Elements
+
+*** 11:20:54 *** 
+Writing Physical Properties
+
+*** 11:20:54 *** 
+Writing Materials
+
+*** 11:20:54 *** 
+Writing Degree-of-Freedom Sets
+
+*** 11:20:54 *** 
+Writing Loads and Constraints
+
+*** 11:20:54 *** 
+Writing Coordinate Systems
+
+*** 11:20:54 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CTETRA   | 14580    |
+| FORCE    | 8        |
+| GRID     | 36109    |
+| LOAD     | 1        |
+| MAT1     | 1        |
+| PARAM    | 6        |
+| PSOLID   | 1        |
+| SPC      | 420      |
++----------+----------+
+
+*** 11:20:54 *** 
+Nastran Deck Successfully Written
+
