@@ -89,9 +89,9 @@ for i = 1:length(do)
   
 end
 % [force, outer diameter, thickness, length, weight]
-% [4430621, 0.19, 0.007, 1.8, 41.5]
-% [2657631, 0.17, 0.007, 2, 41.2] %change CAD to match
-
+% [4368029, 0.2, 0.007, 2, 48.57] %update CAD
+Sy = 503e6;
+MS = Sy/4368029-1
 %% horiztonal acceleration loading
 % masses (kg)
 mpr = 23944+7482;
@@ -101,13 +101,13 @@ mtot = 40528-(mpr-mpr_des);
 
 vh = 1; %horizontal velocity (m/s)
 t = 1; %time to touchdown (s)
-P = 99260; % vertical force
-W = .8*P; %horizontal force (N) using friction (.8) coefficient of friction
-x = 0:.1:2; %distance from the end of the beam to wherever we want to analyze
+P = 99260/2; % vertical force
+W = (.8*P)/2; %horizontal force (N) using friction (.8) coefficient of friction
+x = 0:.1:1.5; %distance from the end of the beam to wherever we want to analyze
 a = 0; % W occurs at the tip
 l = 2;
 E = 71.7e9;
-do = .17;
+do = .2;
 dt = .007;
 di = do-dt;
 ro = do/2;
@@ -139,16 +139,15 @@ Ca5 = k^2/2*(l-a)^2-Ca3;
 Ca6 = k^3/6*(l-a)^3-Ca4;
 
 Ra = 0;
-Siga = 0;
+Siga = (W/P)*(Ca3/C1);
 Ma = 0;
 ya = (-W/(k*P))*((C2*Ca3-C1*Ca4)/C1);
 yb = 0;
 Rb = W;
 Sigb = 0;
-Mb = -(W/k)*((cos(k*a)-cos(k*l))/sin(k*l));
-
+Mb = -(W/k)*((C2*Ca3+C1*Ca2)/C1);
 for i = 1:length(x)
-    if (i/18) < a
+    if (i/10) < a
         Fa1(i) = 0*cos(k*(x(i)-a));
         Fa2(i) = sin(k*(x(i)-a));
         Fa3(i) = 0*(1-cos(k*(x(i)-a)));
@@ -171,6 +170,9 @@ dy = ya+((Siga./k).*F2)+((Ma./P).*F3)+((Ra./(k.*P)).*F4)-((W./(k.*P)).*Fa4); %de
 Q = 2/3*(ro^3-ri^3);
 Tau = (V*Q)/(I*dt);
 Sig = (M*ro)/I;
+Sy = 503e6;
+
+MS = Sy/abs(min(Sig))-1
 
 figure(1)
 plot(x,V)
