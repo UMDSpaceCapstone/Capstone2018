@@ -18,8 +18,8 @@ symbol=DELDIR='c:/program files/siemens/nx 12.0/nxnastran/nxn12/nast/del' $(prog
 symbol=DEMODIR='c:/program files/siemens/nx 12.0/nxnastran/nxn12/nast/demo' $(program default)
 symbol=SSSALTERDIR='c:/program files/siemens/nx 12.0/nxnastran/nxn12/nast/misc/sssalter' $(program default)
 symbol=TPLDIR='c:/program files/siemens/nx 12.0/nxnastran/nxn12/nast/tpl' $(program default)
-SDIR='c:/users/tbain/appdata/local/temp/core_united_sim1-solution_1.T25572_18'
-DBS='c:/users/tbain/appdata/local/temp/core_united_sim1-solution_1.T25572_18'
+SDIR='c:/users/tbain/appdata/local/temp/core_united_sim1-solution_1.T41300_48'
+DBS='c:/users/tbain/appdata/local/temp/core_united_sim1-solution_1.T41300_48'
 SCR=yes
 SMEM=20.0X
 NEWDEL='c:/program files/siemens/nx 12.0/nxnastran/nxn12/em64tntl/SSS'
@@ -43,11 +43,11 @@ FPE:         no
 -------------------------------------------------------------------
 Current resource limits:
  Physical memory:                     8034 MB
- Physical memory available:           2523 MB
- Paging file size:                   12898 MB
- Paging file size available:          3365 MB
+ Physical memory available:           1346 MB
+ Paging file size:                   14968 MB
+ Paging file size available:          2759 MB
  Virtual memory:                 134217727 MB
- Virtual memory available:       134217647 MB
+ Virtual memory available:       134217646 MB
 -------------------------------------------------------------------
 System configuration:
  Hostname:         LAPTOP-42GTO7VI
@@ -60,52 +60,52 @@ System configuration:
  Raw model ID:     8666
  Config number:    8666
  Physical memory:  8034 MB
- Virtual memory:   12898 MB
+ Virtual memory:   14968 MB
  Numeric format:   64-bit little-endian IEEE.
  Bytes per word:   8
  Disk block size:  512 bytes (64 words)
  Remote shell cmd: "c:/program files/siemens/nx 12.0/nxnastran/nxn12/em64tntl/edsrmtcmd.exe" (Windows, UNIX)
 -------------------------------------------------------------------
-NX Nastran started  Wed Apr 24 10:39:18 EDT 2019
- 10:39:19  Beginning Analysis
+NX Nastran started  Thu Apr 25 13:40:49 EDT 2019
+ 13:40:49  Beginning Analysis
 
- 10:39:19  NX NASTRAN Authorization Information - System Attributes
- 10:39:19  --------------------------------------------------------
- 10:39:19  Model: Intel(R) Core(TM) i7-8750H CPU @
- 10:39:19  Machine: Intel64 Family 6 Model 158 Stepp
- 10:39:19  OS: Windows 10
- 10:39:19  Version:
- 10:39:19  License File(s): 28000@plm.eng.umd.edu
-
-
- 10:39:22  NX NASTRAN Licensing Information
- 10:39:22  -------------------------------
- 10:39:22  Sold To ID:            1333569 - UNIVERSITY OF MARYLAN
- 10:39:22  Webkey Access Code:    6KP6PD4LU4
- 10:39:22  License File Issuer:   SIEMENS
+ 13:40:49  NX NASTRAN Authorization Information - System Attributes
+ 13:40:49  --------------------------------------------------------
+ 13:40:49  Model: Intel(R) Core(TM) i7-8750H CPU @
+ 13:40:49  Machine: Intel64 Family 6 Model 158 Stepp
+ 13:40:49  OS: Windows 10
+ 13:40:49  Version:
+ 13:40:49  License File(s): 28000@plm.eng.umd.edu
 
 
- 10:39:22  NX NASTRAN Authorization Information - Checkout Successful
- 10:39:22  ----------------------------------------------------------
- 10:39:22  License for module NX Nastran Basic - NX Desktop (Bundle)  checked out successfully
+ 13:40:52  NX NASTRAN Licensing Information
+ 13:40:52  -------------------------------
+ 13:40:52  Sold To ID:            1333569 - UNIVERSITY OF MARYLAN
+ 13:40:52  Webkey Access Code:    6KP6PD4LU4
+ 13:40:52  License File Issuer:   SIEMENS
+
+
+ 13:40:52  NX NASTRAN Authorization Information - Checkout Successful
+ 13:40:52  ----------------------------------------------------------
+ 13:40:52  License for module NX Nastran Basic - NX Desktop (Bundle)  checked out successfully
 
 Loading Shared Library C:\Program Files\Siemens\NX 12.0\nxcae_extras\tmg\exe\mayamoncomm.dll
 Starting viewer with UGII_MONITOR_DIR set to 'C:\Program Files\Siemens\NX 12.0\nxcae_extras\tmg\exe'
 Starting monitor viewer at C:\Program Files\Siemens\NX 12.0\nxcae_extras\tmg\exe/xcsmon_viewer.exe
- 10:39:25  Analysis started.
- 10:39:25  Geometry access/verification to CAD part initiated (if needed).
- 10:39:25  Geometry access/verification to CAD part successfully completed (if needed).
- 10:39:26  Finite element model generation started.
- 10:39:29  Finite element model generated 372630 degrees of freedom.
- 10:39:29  Finite element model generation successfully completed.
- 10:39:29  Application of Loads and Boundary Conditions to the finite element model started.
- 10:39:29  Application of Loads and Boundary Conditions to the finite element model successfully completed.
- 10:39:34  Solution of the system equations for linear statics started.
- 10:39:34  Solution of the system equations for linear statics successfully completed.
- 10:39:36  Linear static analysis completed.
- 10:39:40  NSEXIT: EXIT(0)
- 10:39:40  Analysis complete  0
-Real:       21.514 seconds ( 0:00:21.514)
-User:       15.375 seconds ( 0:00:15.375)
-Sys:         0.906 seconds ( 0:00:00.906)
-NX Nastran finished Wed Apr 24 10:39:40 EDT 2019
+ 13:40:54  Analysis started.
+ 13:40:54  Geometry access/verification to CAD part initiated (if needed).
+ 13:40:54  Geometry access/verification to CAD part successfully completed (if needed).
+ 13:40:55  Finite element model generation started.
+ 13:40:57  Finite element model generated 372630 degrees of freedom.
+ 13:40:57  Finite element model generation successfully completed.
+ 13:40:57  Application of Loads and Boundary Conditions to the finite element model started.
+ 13:40:58  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 13:41:01  Solution of the system equations for linear statics started.
+ 13:41:02  Solution of the system equations for linear statics successfully completed.
+ 13:41:02  Linear static analysis completed.
+ 13:41:06  NSEXIT: EXIT(0)
+ 13:41:06  Analysis complete  0
+Real:       17.855 seconds ( 0:00:17.855)
+User:        8.718 seconds ( 0:00:08.718)
+Sys:         0.875 seconds ( 0:00:00.875)
+NX Nastran finished Thu Apr 25 13:41:07 EDT 2019

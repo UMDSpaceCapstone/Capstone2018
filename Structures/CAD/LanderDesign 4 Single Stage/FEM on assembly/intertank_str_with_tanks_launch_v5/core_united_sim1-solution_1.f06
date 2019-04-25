@@ -88,7 +88,7 @@
  for global, or multi-user control, and in a local file for local control.
  Individual jobs can be controlled by setting news to yes or no on the command
  line.
-1                                                                             APRIL  24, 2019  NX NASTRAN  9/21/17   PAGE     1
+1                                                                             APRIL  25, 2019  NX NASTRAN  9/21/17   PAGE     1
                                                                                                                                     
 0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
 0                                                                                                                                   
@@ -111,8 +111,8 @@
      $*        SOLUTION TYPE: SOL 101 LINEAR STATICS - GLOBAL CONSTRAINTS            
      $*                                                                              
      $*    SOLVER INPUT FILE: CORE_UNITED_SIM1-SOLUTION_1.DAT                        
-     $*        CREATION DATE: 24-APR-2019                                            
-     $*        CREATION TIME: 10:39:16                                               
+     $*        CREATION DATE: 25-APR-2019                                            
+     $*        CREATION TIME: 13:40:47                                               
      $*             HOSTNAME: LAPTOP-42GTO7VI                                        
      $*      NASTRAN LICENSE: DESKTOP BUNDLE                                         
      $*                                                                              
@@ -143,7 +143,7 @@
      $*                                                                              
      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
      $*                                                                              
-1                                                                             APRIL  24, 2019  NX NASTRAN  9/21/17   PAGE     2
+1                                                                             APRIL  25, 2019  NX NASTRAN  9/21/17   PAGE     2
                                                                                                                                     
 0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
 0                                                                                                                                   
@@ -152,7 +152,7 @@
      ID,NASTRAN,CORE_UNITED_SIM1-SOLUTION_1                                                  
      SOL 101                                                                                 
      CEND                                                                                    
-1                                                                             APRIL  24, 2019  NX NASTRAN  9/21/17   PAGE     3
+1                                                                             APRIL  25, 2019  NX NASTRAN  9/21/17   PAGE     3
                                                                                                                                     
 0                                                                                                                                   
 0                                        C A S E    C O N T R O L    E C H O                                                        
@@ -183,8 +183,8 @@
                  23      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
                  24      $*                                                                                      
                  25      BEGIN BULK                                                                              
-0                             INPUT BULK DATA ENTRY COUNT =      177289
-0                       TOTAL COUNT=    177263
+0                             INPUT BULK DATA ENTRY COUNT =      181729
+0                       TOTAL COUNT=    181700
 
 
                                         M O D E L   S U M M A R Y
@@ -199,7 +199,7 @@
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =        7 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =        8 RECORDS.)
      (TOTAL DATA WRITTEN FOR TAPE LABEL =       17 WORDS.)
-1                                                                             APRIL  24, 2019  NX NASTRAN  9/21/17   PAGE     4
+1                                                                             APRIL  25, 2019  NX NASTRAN  9/21/17   PAGE     4
                                                                                                                                     
 0                                                                                                                                   
 0                                                                                                                                   
@@ -210,8 +210,8 @@
                     101                 1                 0                 0                 0                 0                 0
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       20 WORDS.)
-     (NUMBER OF FORTRAN RECORDS WRITTEN =   886454 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =  4254935 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =   908654 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =  4361495 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK ICASE    WRITTEN ON FORTRAN UNIT  12, TRL =
                     102                27                 0                 0                 0                 0                 0
@@ -254,7 +254,7 @@
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       10 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
      (TOTAL DATA WRITTEN FOR DATA BLOCK =       43 WORDS.)
-1                                                                             APRIL  24, 2019  NX NASTRAN  9/21/17   PAGE     5
+1                                                                             APRIL  25, 2019  NX NASTRAN  9/21/17   PAGE     5
                                                                                                                                     
 0                                                                                                                                   
 0                                                                                                                                   
@@ -278,9 +278,9 @@
      DATA BLOCK GEOM3    WRITTEN ON FORTRAN UNIT  12, TRL =
                     102                 0                 0                64                 8                 0                 0
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    31055 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    62107 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       29 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =    31105 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    62163 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK GEOM4    WRITTEN ON FORTRAN UNIT  12, TRL =
                     103                 0                 0                 0               512                 0                 0
@@ -309,7 +309,7 @@
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       28 RECORDS.)
      (TOTAL DATA WRITTEN FOR DATA BLOCK =   248450 WORDS.)
-1                                                                             APRIL  24, 2019  NX NASTRAN  9/21/17   PAGE     6
+1                                                                             APRIL  25, 2019  NX NASTRAN  9/21/17   PAGE     6
                                                                                                                                     
 0                                                                                                                                   
 0
@@ -324,7 +324,7 @@
      A MINIMUM OF        100 EDGE NODE POINT INCLUDED ANGLE   TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
      ALL NEG/ZERO DET(JACOBIAN) VALUE (DJ)TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY FAIL.
      A MINIMUM OF        100 NEG DET(JAC) AT VERTEX NODE  (DG)TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
-1                                                                             APRIL  24, 2019  NX NASTRAN  9/21/17   PAGE     7
+1                                                                             APRIL  25, 2019  NX NASTRAN  9/21/17   PAGE     7
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  TET_AR =   100.00, TET_EPLR =   0.50, TET_EPIA =  30.00, TET_DETJ =   0.00, TET_DETG =   0.00
@@ -373,7 +373,7 @@
     TETRA        2693      45.67       13.46       3.39            0.80           37.10 xxxx    7136.31         6420.41     
     TETRA        2744      67.78       19.40       3.49            0.82           34.64 xxxx   39989.74        31966.07     
     TETRA        2783      64.42       24.97       2.58            0.74           37.21 xxxx   54535.70        48584.50     
-1                                                                             APRIL  24, 2019  NX NASTRAN  9/21/17   PAGE     8
+1                                                                             APRIL  25, 2019  NX NASTRAN  9/21/17   PAGE     8
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  TET_AR =   100.00, TET_EPLR =   0.50, TET_EPIA =  30.00, TET_DETJ =   0.00, TET_DETG =   0.00
@@ -422,7 +422,7 @@
     TETRA        4993      41.37       14.10       2.93            0.81           66.96 xxxx    5452.39         2672.87     
     TETRA        4994      42.24       13.34       3.17            0.85           66.96 xxxx    6974.46         4328.37     
     TETRA        5040      43.14       18.65       2.31            0.78           30.33 xxxx   22556.11        21534.00     
-1                                                                             APRIL  24, 2019  NX NASTRAN  9/21/17   PAGE     9
+1                                                                             APRIL  25, 2019  NX NASTRAN  9/21/17   PAGE     9
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  TET_AR =   100.00, TET_EPLR =   0.50, TET_EPIA =  30.00, TET_DETJ =   0.00, TET_DETG =   0.00
@@ -454,7 +454,7 @@
     TETRA       15047      41.38       17.99       2.30            0.77           30.58 xxxx    3508.12        -4388.51 xxxx
     TETRA       18475      52.43       17.43       3.01            0.86           17.43         7398.60        -2621.57 xxxx
     TETRA       18554      51.96       13.86       3.75            0.64           31.10 xxxx    3241.89        -1049.71 xxxx
-1                                                                             APRIL  24, 2019  NX NASTRAN  9/21/17   PAGE    10
+1                                                                             APRIL  25, 2019  NX NASTRAN  9/21/17   PAGE    10
                                                                                                                                     
 0                                                                                                                                   
 
@@ -470,7 +470,7 @@
 
          TETRA    ELEMENT ID     4957 PRODUCED SMALLEST VERTEX DET(JAC) -UWM 6828- OF   -4462.60 (TOLERANCE =        0.00).
          TETRA    ELEMENT ID    11741 PRODUCED LARGEST  EDGE POINT IA    OF      70.79 (TOLERANCE =       30.00).
-1                                                                             APRIL  24, 2019  NX NASTRAN  9/21/17   PAGE    11
+1                                                                             APRIL  25, 2019  NX NASTRAN  9/21/17   PAGE    11
                                                                                                                                     
 0                                                                                                                                   
  *** USER INFORMATION MESSAGE 7310 (VECPRN)
@@ -481,14 +481,14 @@
   DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
 0        1     FX    0.000000E+00     ----          ----          ----       0.000000E+00  0.000000E+00                             
                FY       ----       0.000000E+00     ----       0.000000E+00     ----       0.000000E+00                             
-               FZ       ----          ----      -6.884362E+08 -6.116992E+07  2.869566E+07     ----                                  
+               FZ       ----          ----      -3.788606E+08 -4.560684E+06  3.991574E+06     ----                                  
                MX       ----          ----          ----       0.000000E+00     ----          ----                                  
                MY       ----          ----          ----          ----       0.000000E+00     ----                                  
                MZ       ----          ----          ----          ----          ----       0.000000E+00                             
-             TOTALS  0.000000E+00  0.000000E+00 -6.884362E+08 -6.116992E+07  2.869566E+07  0.000000E+00                             
+             TOTALS  0.000000E+00  0.000000E+00 -3.788606E+08 -4.560684E+06  3.991574E+06  0.000000E+00                             
  *** USER INFORMATION MESSAGE - SINGULARITIES FOUND USING EIGENVALUE METHOD
  ***  184071 SINGULARITIES FOUND    184071 SINGULARITIES ELIMINATED
-1                                                                             APRIL  24, 2019  NX NASTRAN  9/21/17   PAGE    12
+1                                                                             APRIL  25, 2019  NX NASTRAN  9/21/17   PAGE    12
                                                                                                                                     
 0                                                                                                            SUBCASE 1              
  *** SYSTEM INFORMATION MESSAGE 6916 (DFMSYN)
@@ -496,8 +496,8 @@
  *** USER INFORMATION MESSAGE 5293 (SSG3A)
     FOR DATA BLOCK KLL     
     LOAD SEQ. NO.             EPSILON              EXTERNAL WORK      EPSILONS LARGER THAN 0.001 ARE FLAGGED WITH ASTERISKS
-                1          5.3449572E-11          2.8173348E+10
-1                                                                             APRIL  24, 2019  NX NASTRAN  9/21/17   PAGE    13
+                1          6.8846715E-12          1.3162723E+09
+1                                                                             APRIL  25, 2019  NX NASTRAN  9/21/17   PAGE    13
                                                                                                                                     
 0                                                                                                                                   
  *** USER INFORMATION MESSAGE 7310 (VECPRN)
@@ -506,41 +506,41 @@
 0                                                  SPCFORCE RESULTANT       
   SUBCASE/    LOAD
   DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
-0        1     FX   -5.956681E-03     ----          ----          ----      -5.716339E+00  6.096030E+07                             
-               FY       ----      -8.613410E-03     ----       8.265621E+00     ----      -6.096036E+07                             
-               FZ       ----          ----       6.884362E+08  6.117004E+07 -2.869566E+07     ----                                  
+0        1     FX    4.307169E-04     ----          ----          ----       4.133207E-01 -2.475450E+07                             
+               FY       ----       2.275666E-04     ----      -2.183921E-01     ----       2.475448E+07                             
+               FZ       ----          ----       3.788606E+08  4.560693E+06 -3.991575E+06     ----                                  
                MX       ----          ----          ----       0.000000E+00     ----          ----                                  
                MY       ----          ----          ----          ----       0.000000E+00     ----                                  
                MZ       ----          ----          ----          ----          ----       0.000000E+00                             
-             TOTALS -5.956681E-03 -8.613410E-03  6.884362E+08  6.117005E+07 -2.869567E+07 -6.485658E+01                             
+             TOTALS  4.307169E-04  2.275666E-04  3.788606E+08  4.560693E+06 -3.991575E+06 -1.189078E+01                             
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK OQG1     WRITTEN ON FORTRAN UNIT  12, TRL =
-                    101                 7             38088                24                19                 0                 1
+                    101                 7             38088                25                19                 0                 1
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       38 RECORDS.)
      (TOTAL DATA WRITTEN FOR DATA BLOCK =   497021 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK BOUGV1   WRITTEN ON FORTRAN UNIT  12, TRL =
-                    101                 7             38088                24                19                 0                 1
+                    101                 7             38088                25                19                 0                 1
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       38 RECORDS.)
      (TOTAL DATA WRITTEN FOR DATA BLOCK =   497021 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK OES1     WRITTEN ON FORTRAN UNIT  12, TRL =
-                    101                63                 4                24                19                 0                 1
+                    101                63                 4                25                19                 0                 1
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =      102 RECORDS.)
      (TOTAL DATA WRITTEN FOR DATA BLOCK =  2608442 WORDS.)
-1                                                                             APRIL  24, 2019  NX NASTRAN  9/21/17   PAGE    14
+1                                                                             APRIL  25, 2019  NX NASTRAN  9/21/17   PAGE    14
                                                                                                                                     
 0                                                                                                                                   
-1                                                                             APRIL  24, 2019  NX NASTRAN  9/21/17   PAGE    15
+1                                                                             APRIL  25, 2019  NX NASTRAN  9/21/17   PAGE    15
                                                                                                                                     
 0                                                                                                                                   
-1                                                                             APRIL  24, 2019  NX NASTRAN  9/21/17   PAGE    16
+1                                                                             APRIL  25, 2019  NX NASTRAN  9/21/17   PAGE    16
                                                                                                                                     
 0                                                                                                                                   
  *** USER INFORMATION MESSAGE 4110 (OUTPBN2)
@@ -548,7 +548,7 @@
                                  (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      1 WORDS.)
                                        (NUMBER OF FORTRAN RECORDS WRITTEN =      1 RECORDS.)
                                        (TOTAL DATA WRITTEN FOR EOF MARKER =      1 WORDS.)
-1                                                                             APRIL  24, 2019  NX NASTRAN  9/21/17   PAGE    17
+1                                                                             APRIL  25, 2019  NX NASTRAN  9/21/17   PAGE    17
                                                                                                                                     
 0                                                                                                                                   
  * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     29
