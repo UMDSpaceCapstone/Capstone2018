@@ -91,6 +91,7 @@ end
 % [force, outer diameter, thickness, length, weight]
 % [4368029, 0.2, 0.007, 2, 48.57] %update CAD
 Sy = 503e6;
+SF = Sy/4368029
 MS = Sy/4368029-1
 %% horiztonal acceleration loading
 % masses (kg)
@@ -172,6 +173,7 @@ Tau = (V*Q)/(I*dt);
 Sig = (M*ro)/I;
 Sy = 503e6;
 
+SF = Sy/abs(min(Sig))
 MS = Sy/abs(min(Sig))-1
 
 figure(1)
