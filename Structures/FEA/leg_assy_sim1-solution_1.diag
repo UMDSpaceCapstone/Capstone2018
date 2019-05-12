@@ -1,0 +1,70 @@
+
+*** 21:45:31 *** 
+Starting Nastran Exporter
+
+*** 21:45:31 *** 
+Writing file 
+C:\Users\jabbo\OneDrive\Documents\GitHub\Capstone2018\Structures\FEA\leg_assy_sim1-solution_1.dat
+ 
+*** 21:45:31 *** 
+Writing NX NASTRAN 12.0 compatible deck
+
+*** 21:45:32 *** 
+Writing Nastran System section
+
+*** 21:45:32 *** 
+Writing File Management section
+
+*** 21:45:32 *** 
+Writing Executive Control section
+
+*** 21:45:32 *** 
+Writing Case Control section
+
+*** 21:45:34 *** 
+Writing Bulk Data section
+
+*** 21:45:34 *** 
+Writing Nodes
+
+*** 21:45:35 *** 
+Writing Elements
+
+*** 21:45:36 *** 
+Writing Physical Properties
+
+*** 21:45:36 *** 
+Writing Materials
+
+*** 21:45:36 *** 
+Writing Degree-of-Freedom Sets
+
+*** 21:45:36 *** 
+Writing Loads and Constraints
+
+*** 21:45:36 *** 
+Writing Coordinate Systems
+
+*** 21:45:36 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| BCRPARA  | 20       |
+| BGADD    | 1        |
+| BGSET    | 12       |
+| BSURFS   | 20       |
+| CTETRA   | 89017    |
+| FORCE    | 2        |
+| GRID     | 178687   |
+| LOAD     | 1        |
+| MAT1     | 2        |
+| PARAM    | 6        |
+| PSOLID   | 3        |
+| SPC      | 733      |
++----------+----------+
+
+*** 21:45:37 *** 
+Nastran Deck Successfully Written
+
