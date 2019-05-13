@@ -1,61 +1,96 @@
 % Juliette Abbonizio EGGS
 %% total mass
-mpr = 1034.20; %kg
-mtot = 18474; %kg
-%% vertical force
-%solve for buckling and stress in the shear panels (use mass of whole
-%vehicle)
-F1 = 6*9.81*mtot;
+mpr = 1065; %kg
+mtot = 18999.20; %kg
+
+%% tank calcs
 % CH4 tank
 P_ch4 = 206.8e3;
 V_ch4 = 8.27;
 %V = 4/3*pi*r^3
-t = .001:.0005:.004;
-Sy = 503e6 %MPa %yield for aluminum
+t1 = .001:.0005:.004;
+Sy = 503e6; %MPa %yield for aluminum
 count = 1;
-r_ch4 = (V_ch4/((2/3)*pi))^(1/3);
+ri_ch4 = (V_ch4/((2/3)*pi))^(1/3);
 rho_al = 2810;
-SA_ch4 = 2*pi*r_ch4^2;
-for i = 1:length(t)
-    sig(i) = (P_ch4*r_ch4)/(2*t(i));
-    m_ch4(i) = rho_al*SA_ch4*t(i);
-    if sig(i) < Sy
-        Sig_act_ch4(count,1) = sig(i);
-        Sig_act_ch4(count,2) = t(i);
+SA_ch4 = 2*pi*ri_ch4^2;
+for i = 1:length(t1)
+    sig_ch4(i) = (P_ch4*ri_ch4)/(2*t1(i)); %axial stress;
+    m_ch4(i) = rho_al*SA_ch4*t1(i);
+    if sig_ch4(i) < Sy
+        Sig_act_ch4(count,1) = sig_ch4(i);
+        Sig_act_ch4(count,2) = t1(i);
         Sig_act_ch4(count,3) = m_ch4(i);
         count = count+1;
     end
 end
+ro_ch4 = .001+ri_ch4;
 % stress, thickness, mass
-% [40857913, 0.004, 176.4]
-% [163431652, 0.001, 44]
+% [54477217, 0.003, 132.3]
 
 % LOX tank
 P_lox = 206.8e3;
 V_lox = 10.48;
-r_lox = (V_lox/((2/3)*pi))^(1/3)
+ri_lox = (V_lox/((2/3)*pi))^(1/3);
 rho_al = 2810;
-SA_lox = 2*pi*r_lox^2;
+SA_lox = 2*pi*ri_lox^2;
 count2 = 1;
-for i = 1:length(t)
-    sig(i) = (P_lox*r_lox)/(2*t(i));
-    m_lox(i) = rho_al*SA_lox*t(i);
-    if sig(i) < Sy
-        Sig_act_lox(count2,1) = sig(i);
-        Sig_act_lox(count2,2) = t(i);
+for i = 1:length(t1)
+    sig_lox(i) = (P_lox*ri_lox)/(2*t1(i)); %axial stress;
+    m_lox(i) = rho_al*SA_lox*t1(i);
+    if sig_lox(i) < Sy
+        Sig_act_lox(count2,1) = sig_lox(i);
+        Sig_act_lox(count2,2) = t1(i);
         Sig_act_lox(count2,3) = m_lox(i);
         count2 = count2 +1;
     end
 end
+ro_lox = ri_lox + .001;
 % stress, thickness, mass
-% [176856664, 0.001, 52]
+% [5053047, 0.0035, 181]
 
-% skirt
+t2 = .005:.001:.01;
 
-%% horizontal force
-F2 = 2*9.81*mtot;
-% CH4 tank
+% MMH tank
+P_mmh = 10e6; %Pa
+V_mmh = .07; %m3
+ri_mmh = (V_mmh/((4/3)*pi))^(1/3);
+rho_al = 2810;
+SA_mmh = 4*pi*ri_mmh^2;
+count2 = 1;
+for i = 1:length(t2)
+    sig_mmh(i) = (P_mmh*ri_mmh)/(2*t2(i)); %axial stress;
+    m_mmh(i) = rho_al*SA_mmh*t2(i);
+    if sig_mmh(i) < Sy
+        Sig_act_mmh(count2,1) = sig_mmh(i);
+        Sig_act_mmh(count2,2) = t2(i);
+        Sig_act_mmh(count2,3) = m_mmh(i);
+        count2 = count2 +1;
+    end
+end
+ro_mmh = ri_mmh + .001;
 
-% LOX tank
+% stress, thickness, mass
+% [255664135, 0.005, 11.5]
 
-% skirt
+% N2O4 tank
+P_no = 10e6;
+V_no = .092;
+ri_no = (V_no/((4/3)*pi))^(1/3);
+rho_al = 2810;
+SA_no = 4*pi*ri_no^2;
+count2 = 1;
+for i = 1:length(t2)
+    sig_no(i) = (P_no*ri_no)/(2*t2(i)); %axial stress;
+    m_no(i) = rho_al*SA_no*t2(i);
+    if sig_no(i) < Sy
+        Sig_act_no(count2,1) = sig_no(i);
+        Sig_act_no(count2,2) = t2(i);
+        Sig_act_no(count2,3) = m_no(i);
+        count2 = count2 +1;
+    end
+end
+ro_no = ri_no + .001;
+
+% stress, thickness, mass
+% [280048385,0.00500000000000000,13.8468929158436]
