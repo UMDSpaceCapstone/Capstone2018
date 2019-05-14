@@ -53,7 +53,7 @@ t2 = .005:.001:.01;
 
 % MMH tank
 P_mmh = 10e6; %Pa
-V_mmh = .07; %m3
+V_mmh = .07 + .1798; %m3
 ri_mmh = (V_mmh/((4/3)*pi))^(1/3);
 rho_al = 2810;
 SA_mmh = 4*pi*ri_mmh^2;
@@ -71,11 +71,11 @@ end
 ro_mmh = ri_mmh + .001;
 
 % stress, thickness, mass
-% [255664135, 0.005, 11.5]
+% [390692080, 0.005, 27]
 
 % N2O4 tank
 P_no = 10e6;
-V_no = .092;
+V_no = .092 + .2373;
 ri_no = (V_no/((4/3)*pi))^(1/3);
 rho_al = 2810;
 SA_no = 4*pi*ri_no^2;
@@ -93,4 +93,4 @@ end
 ro_no = ri_no + .001;
 
 % stress, thickness, mass
-% [280048385, 0.005, 13.8]
+% [428385116, 0.005, 32.4]
