@@ -11,7 +11,7 @@ V_ch4 = 8.27;
 t1 = .001:.0005:.004;
 Sy = 503e6; %MPa %yield for aluminum
 count = 1;
-ri_ch4 = (V_ch4/((2/3)*pi))^(1/3);
+ri_ch4 = (V_ch4/((4/3)*pi))^(1/3);
 rho_al = 2810;
 SA_ch4 = 2*pi*ri_ch4^2;
 for i = 1:length(t1)
@@ -26,12 +26,12 @@ for i = 1:length(t1)
 end
 ro_ch4 = .001+ri_ch4;
 % stress, thickness, mass
-% [54477217, 0.003, 132.3]
+% [43238596, 0.003, 84]
 
 % LOX tank
 P_lox = 206.8e3;
 V_lox = 10.48;
-ri_lox = (V_lox/((2/3)*pi))^(1/3);
+ri_lox = (V_lox/((4/3)*pi))^(1/3);
 rho_al = 2810;
 SA_lox = 2*pi*ri_lox^2;
 count2 = 1;
@@ -47,7 +47,7 @@ for i = 1:length(t1)
 end
 ro_lox = ri_lox + .001;
 % stress, thickness, mass
-% [5053047, 0.0035, 181]
+% [40106064, 0.0035, 114]
 
 t2 = .005:.001:.01;
 
