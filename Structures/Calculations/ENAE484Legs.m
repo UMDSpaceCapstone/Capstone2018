@@ -5,7 +5,6 @@ clear all
 % masses (kg)
 mpr = 23944+7482;
 mpr_des = .50*mpr;
-mi_des = 2242.4; %includes structural mass
 mtot = 40528-(mpr-mpr_des);
 
 %moon gravity (m/s^2)
@@ -20,14 +19,6 @@ t = 1;
 
 %weight
 W = mtot*g;
-
-%energy
-Ke = 1/2*mtot*vv^2;
-
-% yield strength (sigma) (Pa)
-% O = Pcr/A
-% O = 276e6;
-% P = O.*A;
 
 % vertical acceleration loading
 % diameter and thickness for a circular ring
@@ -91,8 +82,7 @@ end
 % [force, outer diameter, thickness, length, weight]
 % [4368029, 0.2, 0.007, 2, 48.57] %update CAD
 Sy = 503e6;
-SF = Sy/4368029
-MS = Sy/4368029-1
+MS = (4368029/F)-1
 %% horiztonal acceleration loading
 % masses (kg)
 mpr = 23944+7482;
@@ -173,7 +163,6 @@ Tau = (V*Q)/(I*dt);
 Sig = (M*ro)/I;
 Sy = 503e6;
 
-SF = Sy/abs(min(Sig))
 MS = Sy/abs(min(Sig))-1
 
 figure(1)
@@ -181,12 +170,14 @@ plot(x,V)
 title('shear force vs. x')
 xlabel('x (m)')
 ylabel('shear force (N)')
+set(gca,'Fontsize', 18)
 
 figure(2)
 plot(x,M)
 title('moment vs. x')
 xlabel('x (m)')
 ylabel('moment (Nm)')
+set(gca,'Fontsize', 18)
 
 figure(3)
 plot(x,dy)
