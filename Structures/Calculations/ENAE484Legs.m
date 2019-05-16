@@ -167,6 +167,7 @@ MS = Sy/abs(min(Sig))-1
 
 figure(1)
 plot(x,V)
+grid on
 title('shear force vs. x')
 xlabel('x (m)')
 ylabel('shear force (N)')
@@ -174,6 +175,7 @@ set(gca,'Fontsize', 18)
 
 figure(2)
 plot(x,M)
+grid on
 title('moment vs. x')
 xlabel('x (m)')
 ylabel('moment (Nm)')
@@ -181,18 +183,21 @@ set(gca,'Fontsize', 18)
 
 figure(3)
 plot(x,dy)
+grid on
 title('deflection vs. x')
 xlabel('x (m)')
 ylabel('deflection (m)')
 
 figure(4)
 plot(x,Tau)
+grid on
 title('Shear stress vs. x')
 xlabel('x (m)')
 ylabel('Shear stress (Pa)')
 
 figure(5)
 plot(x,Sig)
+grid on
 title('Bending stress vs. x')
 xlabel('x (m)')
 ylabel('Bending stress (Pa)')
