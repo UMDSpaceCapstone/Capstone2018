@@ -25,8 +25,6 @@ for i = 1:length(t1)
     end
 end
 ro_ch4 = .001+ri_ch4;
-
-MS_ch4 = Sy/43238596-1;
 % stress, thickness, mass
 % [43238596, 0.003, 84]
 
@@ -48,8 +46,6 @@ for i = 1:length(t1)
     end
 end
 ro_lox = ri_lox + .001;
-
-MS_lox = Sy/40106064-1;
 % stress, thickness, mass
 % [40106064, 0.0035, 114]
 
@@ -74,7 +70,6 @@ for i = 1:length(t2)
 end
 ro_mmh = ri_mmh + .001;
 
-MS_mmh = Sy/390692080-1;
 % stress, thickness, mass
 % [390692080, 0.005, 27]
 
@@ -97,7 +92,7 @@ for i = 1:length(t2)
 end
 ro_no = ri_no + .001;
 
-MS_no = Sy/428385116-1;
+MS = Sy/abs(min(Sig))-1
 
 % stress, thickness, mass
 % [428385116, 0.005, 32.4]
